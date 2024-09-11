@@ -1,0 +1,120 @@
+﻿/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+body {
+    background: #ffff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.main_container {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    transition: all 0.3s ease;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40; /* Darker color for a modern look */
+    padding: 0.5em 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    background-color: #ffffff;
+    border: none;
+    padding: 0.5em;
+    display: none;
+}
+
+.navbar-toggler-icon {
+    width: 25px;
+    height: 3px;
+    background-color: #343a40;
+    margin: 5px 0;
+    display: block;
+}
+
+/* Navigation Menu */
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+    .navbar-nav li {
+        margin-left: 1em;
+    }
+
+    .navbar-nav a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+
+        .navbar-nav a:hover {
+            background-color: #495057; /* Subtle hover effect */
+        }
+
+/* Footer */
+.footer {
+    background-color: #343a40; /* Darker color for a modern look */
+    color: #ffffff;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    #navbarMenu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+        .navbar-nav li {
+            margin-left: 0;
+            width: 100%;
+        }
+
+        .navbar-nav a {
+            padding: 1em;
+            text-align: center;
+            width: 100%;
+        }
+}
